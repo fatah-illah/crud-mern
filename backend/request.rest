@@ -1,0 +1,27 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/user/63f0f3520eec2cb716551597
+
+###
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{
+  "name" : "Indah Njei",
+  "email": "njei@gmail.com",
+  "gender": "Female"
+}
+
+###
+PATCH http://localhost:5000/user/63f0f3520eec2cb716551597
+Content-Type: application/json
+
+{
+  "name" : "Indah Njeyi",
+  "email": "njeyi@gmail.com",
+  "gender": "Female"
+}
+
+###
+DELETE http://localhost:5000/user/63f0f3520eec2cb716551597
